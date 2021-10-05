@@ -5,11 +5,22 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta charset="utf-8" />
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+  <header>
+  <div class=first>ロゴとかタイトルとか諸々
+  </div>
+  </header>
     <%= yield %>
+  <footer>
+  <div class=copyright>携わった方々のご協力に感謝します！</div>
+  </footer>
   </body>
+
 </html>
