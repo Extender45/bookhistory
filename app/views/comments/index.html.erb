@@ -1,1 +1,12 @@
 "何もないよ！"
+<div>テスト実装中</div>
+
+<h1>ログイン機能</h1>
+<% if user_signed_in? %>
+<h4>メールアドレス；<%= current_user.email %></h4>
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete%>
+<% else %>
+<h2>現在はログインしていません</h2>
+<%= link_to "ログイン", neu_user_session_path,class: `post` %>
+<%= link_to "新規登録", neu_user_registation_path,class: `post` %>
+<% end %>
