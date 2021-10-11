@@ -7,6 +7,6 @@
 <%= link_to "ログアウト", destroy_user_session_path, method: :delete%>
 <% else %>
 <h2>現在はログインしていません</h2>
-<%= link_to "ログイン", neu_user_session_path,class: `post` %>
-<%= link_to "新規登録", neu_user_registation_path,class: `post` %>
+<%= link_to "ログイン", new_user_session_path,class: 'post' %>
+<%= link_to "新規登録", new_user_registration_path,class: 'post' %>
 <% end %>
