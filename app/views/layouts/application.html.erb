@@ -21,7 +21,15 @@
 
 <% end %>
 
-<div class=first>ロゴとかタイトルとか諸々</div>  
+<div class=title-css>
+  <% if user_signed_in? %>
+<div><%= link_to "ログアウト",comments_index_path %></div>
+
+  <% else %>
+<div><%= link_to "sing_in",comments_index_path %></div>
+  <% end %>
+
+</div>  
   
   </header>
     <%= yield %>

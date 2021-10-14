@@ -15,7 +15,7 @@
  */
 
  .background{
- background-image: url('stone_texture.jpg');
+ /* background-image: url('stone_texture.jpg'); */
  height:100vh;
  width: 100%;
 }
@@ -33,9 +33,10 @@ header{
   margin: 25px;
 }
 
-.first{
+.title-css{
   display: flex;
   align-items: center;
+  margin: 0 0 0 auto;
 
 }
 
