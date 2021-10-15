@@ -33,11 +33,20 @@ header{
   margin: 25px;
 }
 
-.title-css{
+.title_css{
   display: flex;
+  position: relative;
+  justify-content: space-between;
   align-items: center;
   margin: 0 0 0 auto;
+}
 
+.status_css{
+  align-self: flex-start;
+}
+
+.sing_out_css{
+  margin: 20px;
 }
 
 footer{
