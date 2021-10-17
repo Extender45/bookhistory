@@ -1,12 +1,7 @@
 class CommentsController < ApplicationController
   def index
-<<<<<<< Updated upstream
     
-=======
-    @user = current_user 
->>>>>>> Stashed changes
   end
-
   def show
     
   end

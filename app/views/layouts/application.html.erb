@@ -21,31 +21,20 @@
 
 <% end %>
 
-<<<<<<< Updated upstream
-<div class=first>ロゴとかタイトルとか諸々</div>  
-=======
 
+  <div class=title_css>
+    <% if user_signed_in? %>
+    <div class=sing_out_css><%= link_to "コメントを投稿",new_comment_path%></div>
+    <div class=sing_out_css>ユーザー名；<%= current_user.name %></div>
+    <div class=sing_out_css><%= link_to "ログアウト",comments_path %></div>
+    <% else %>
+    <div class=sing_out_css>現在はログインしていません</div>
+    <div class=sing_out_css><%= link_to "sing_in",comments_path %></div>
+    <% end %>
 
-<div class=title_css>
-  <% if user_signed_in? %>
+  </div>  
+</div>
 
-<div class=sing_out_css><%= link_to "コメントを投稿",new_comment_path%></div>
-
-<div class=sing_out_css>ユーザー名；<%= current_user.name %></div>
-
-<div class=sing_out_css><%= link_to "ログアウト",comments_path %></div>
-
-
-
-  <% else %>
-<div class=sing_out_css>現在はログインしていません</div>
-
-<div class=sing_out_css><%= link_to "sing_in",comments_path %></div>
-  <% end %>
-
-</div>  
->>>>>>> Stashed changes
-  
   </header>
     <%= yield %>
   <footer>
