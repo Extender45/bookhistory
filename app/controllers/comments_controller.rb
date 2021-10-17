@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
     
   end
   def show
+    @comments = Comment.all
     
   end
 
