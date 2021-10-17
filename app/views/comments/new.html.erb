@@ -1,0 +1,18 @@
+<h1>comments#new</h1>
+<div class= >app/views/posts/new.html.erb</div>
+<%= form_with model: @comments, local: true do |form|%>
+<div class=> 
+<%= form.label :title %><br>
+<%= form.text_field :title%>
+</div>
+
+<div class=> 
+<%= form.label :body %><br>
+<%= form.text_area :body %>
+</div>
+
+<div class=> 
+<%= form.submit %>
+</div>
+
+<% end %>
