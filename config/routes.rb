@@ -3,9 +3,10 @@ Rails.application.routes.draw do
 root to: "tops#index"
 # root 'comments#index'
 
+resources :comments
 
 get "books/show"
+get "comments/create"
 get "comments/show"
-get "comments/index"
 get "singins/create"
 end

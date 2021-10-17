@@ -15,8 +15,13 @@
  */
 
  .background{
+<<<<<<< Updated upstream
  background-image: url('stone_texture.jpg');
  height:100vh;
+=======
+ /* background-image: url('stone_texture.jpg'); */
+ /* height:100vh; */
+>>>>>>> Stashed changes
  width: 100%;
 }
 

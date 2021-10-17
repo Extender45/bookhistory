@@ -2,6 +2,22 @@
 <div class="center">"Home"</div>
 <div><%= link_to "books_show",books_show_path %></div>
 <div><%= link_to "comments_show",comments_show_path %></div>
+<<<<<<< Updated upstream
 <div><%= link_to "sing_in",comments_index_path %></div>
-
+=======
 </div>
+>>>>>>> Stashed changes
+
+<table>
+  <tr>
+    <th>title</th>
+    <th>text</th>
+    <th colspan="3"></th>
+  </tr>
+  <% @comments.each do |comment| %>
+  <tr>
+    <td><%= comment.title %></td>
+    <td><%= comment.body %></td>
+  </tr>
+  <% end %>
+</table>
