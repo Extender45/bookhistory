@@ -29,7 +29,10 @@
     <div class=sing_out_css><%= link_to "ログアウト",comments_path %></div>
     <% else %>
     <div class=sing_out_css>現在はログインしていません</div>
-    <div class=sing_out_css><%= link_to "sing_in",comments_path %></div>
+
+    <div class=sing_out_css><%= link_to "新規登録", new_user_registration_path,class: 'post' %></div>
+
+    <div class=sing_out_css><%= link_to "サインイン",comments_path %></div>
     <% end %>
 
   </div>  
