@@ -24,15 +24,17 @@
 
   <div class=title_css>
     <% if user_signed_in? %>
-    <div class=sing_out_css><%= link_to "コメントを投稿",new_comment_path%></div>
-    <div class=sing_out_css>ユーザー名；<%= current_user.name %></div>
-    <div class=sing_out_css><%= link_to "ログアウト",comments_path %></div>
+
+      <div class=sing_out_css><%= link_to "コメントを見る",comments_show_path %></div>
+      <div class=sing_out_css><%= link_to "コメントを投稿",new_comment_path%></div>
+      <div class=sing_out_css>ユーザー名；<%= current_user.name %></div>
+      <div class=sing_out_css><%= link_to "ログアウト",comments_path %></div>
     <% else %>
-    <div class=sing_out_css>現在はログインしていません</div>
+      <div class=sing_out_css>現在はログインしていません</div>
 
-    <div class=sing_out_css><%= link_to "新規登録", new_user_registration_path,class: 'post' %></div>
+      <div class=sing_out_css><%= link_to "新規登録", new_user_registration_path,class: 'post' %></div>
 
-    <div class=sing_out_css><%= link_to "サインイン",comments_path %></div>
+      <div class=sing_out_css><%= link_to "サインイン",comments_path %></div>
     <% end %>
 
   </div>  
