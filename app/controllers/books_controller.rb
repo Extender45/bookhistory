@@ -14,7 +14,7 @@ class BooksController < ApplicationController
   def create
     @books = Book.new(book_params)
     if@books.save
-      redirect_to root_path
+      redirect_to books_show_path
     else
       render 'new'
     end
@@ -24,7 +24,6 @@ class BooksController < ApplicationController
 
   private
   def book_params
-    params.require(:book).permit(:title, :body)
-    
+    params.require(:book).permit(:title, :body).merge(user_name: current_user.name)
   end
 end
