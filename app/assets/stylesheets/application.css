@@ -65,3 +65,17 @@ footer{
   display: flex;
   justify-content: space-around;
 }
+
+table{
+  display: flex;
+  justify-content: center;
+  table-layout: fixed;
+  border-collapse: collapse; /* 隣接する枠線を重ねる */
+  border: 2px solid green;   /* 外枠：2px,実線,緑色 */
+  width: 100%;    
+}
+
+table td{
+  border: 1px solid green;
+  padding: 3px;
+}

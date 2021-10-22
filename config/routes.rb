@@ -4,9 +4,9 @@ root to: "tops#index"
 # root 'comments#index'
 
 resources :comments
+resources :books
 
 get "books/show"
-get "comments/create"
 get "comments/show"
 get "singins/create"
 end

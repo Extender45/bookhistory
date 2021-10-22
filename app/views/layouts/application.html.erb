@@ -27,6 +27,7 @@
 
       <div class=sing_out_css><%= link_to "コメントを見る",comments_show_path %></div>
       <div class=sing_out_css><%= link_to "コメントを投稿",new_comment_path%></div>
+      <div class=sing_out_css><%= link_to "本を投稿",new_book_path%></div>
       <div class=sing_out_css>ユーザー名；<%= current_user.name %></div>
       <div class=sing_out_css><%= link_to "ログアウト",comments_path %></div>
     <% else %>
@@ -34,7 +35,7 @@
 
       <div class=sing_out_css><%= link_to "新規登録", new_user_registration_path,class: 'post' %></div>
 
-      <div class=sing_out_css><%= link_to "サインイン",comments_path %></div>
+      <div class=sing_out_css><%= link_to "サインイン", new_user_session_path,class: 'post' %></div>
     <% end %>
 
   </div>  
