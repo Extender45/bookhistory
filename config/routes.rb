@@ -5,6 +5,7 @@ root to: "tops#index"
 
 resources :comments
 resources :books
+resources :informations
 
 get "books/show"
 get "comments/show"
